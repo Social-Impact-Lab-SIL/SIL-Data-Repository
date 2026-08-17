@@ -1,3 +1,6 @@
 title: Social Impact Lab Data
 description: Public data repositories and codebooks from the Social Impact Lab.
-theme: jekyll-theme-cayman
+remote_theme: "mmistakes/minimal-mistakes"  # or another theme repository identifier
+skin: "air" # (Depending on the theme's supported skins)
+plugins:
+  - jekyll-remote-theme
