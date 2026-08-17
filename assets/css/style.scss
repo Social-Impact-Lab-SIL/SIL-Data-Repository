@@ -1,0 +1,14 @@
+---
+---
+
+@import "jekyll-theme-primer";
+
+/* Hide the top repository title / header bar completely */
+.page-header, .site-header, .project-name, .btn.view-site {
+  display: none !important;
+}
+
+/* Ensure main content starts cleanly at the top */
+.main-content {
+  padding-top: 2rem !important;
+}
