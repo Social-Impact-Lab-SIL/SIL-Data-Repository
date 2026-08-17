@@ -19,9 +19,9 @@ Datasets and documentation in this repository are made available under our [LICE
 
 ## Available Datasets
 
-* [Specialty Tobacco Dataset](./Specialty-Tobacco/) — Retail locations, spatial distributions, and visitor counts.
-* [Oral Nicotine Pouch Regulation Dataset](./Oral-Nicotine-Pouch/) — Policy standards and methodological tracking. *(Update folder name to match yours)*
-* [Cigar Tax Standardisation Dataset](./Cigar-Tax-Standardisation/) — Pricing behavior and cross-market substitution effects. *(Update folder name to match yours)*
+* [Specialty Tobacco Stores](./Specialty-Tobacco/) — Retail locations, spatial distributions, and visitor counts.
+* [ECig Tax and Restrictions](./Population-Exposure-Standardized-Tobacco/) — Policy standards and methodological tracking. 
+* [Hearing Healthcare Policy](./Hearing-Healthcare-Policy/) — Pricing behavior and cross-market substitution effects. *(Update folder name to match yours)*
 
 ---
 *Maintained by the [Social Impact Lab](https://github.com/Social-Impact-Lab-SIL).*

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Oral Nicotine Pouch Regulation Dataset
+title: Hearing Healthcare Policy Data
 ---
 
 # Title
@@ -10,7 +10,7 @@ title: Oral Nicotine Pouch Regulation Dataset
 ---
 
 ## Dataset Overview
-This directory contains supporting documentation, regulatory tracking data, and methodological frameworks for evaluating modern oral nicotine pouch policies. 
+This directory contains supporting documentation of mandated hearing aid access.
 
 * **Associated Publication:** 
 
