@@ -63,12 +63,13 @@
             padding: 12px 16px;
             color: #586069;
             border-radius: 0 4px 4px 0;
+            font-size: 0.95em;
         }
         ul {
             padding-left: 20px;
         }
         li {
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
         hr {
             border: 0;
@@ -80,6 +81,7 @@
             font-size: 0.95em;
             color: #586069;
             margin-bottom: 12px;
+            font-weight: 600;
         }
     </style>
 </head>
@@ -89,80 +91,84 @@
     <a href="../" class="back-link">← Back to Main Repository Landing Page</a>
 
     <h1>Hearing Healthcare Policy Data</h1>
-    <p>This repository hosts longitudinal policy surveillance data tracking state-level regulations, insurance mandates, Medicaid coverage, and workforce distributions for hearing healthcare in the United States by state and time. Please see the publications below for additional details on how the measures are constructed. Where multiple versions of the data exist, we recommend using the most recent version for new projects.</p>
+    <p>When using any of this project's data, please reference the correct peer-reviewed publication listed below. Please see the publication for methodological details. Where multiple versions of the data exist, we recommend using the most recent version for new projects.</p>
 
     <hr>
 
-    <h2>1. Private Insurance Mandates</h2>
-    <p>Private insurance mandates for hearing aids vary across states and time, making longitudinal and cross-sectional comparisons challenging.</p>
+    <h2>1. Private Insurance Hearing Aid Mandates</h2>
+    <p>Private insurance hearing aid mandates have been adopted by an increasing number of states and vary in age eligibility and generosity. This project describes the details of private insurance hearing aid mandates for each state over time.</p>
     
-    <h3>Version 2</h3>
     <div class="dataset-box">
-        <strong><a href="./data/hear_priv_V2.xlsx">Download Private Insurance Mandates Data Version 2</a></strong> <em>(Excel Workbook)</em>
+        <strong><a href="./data/hear_priv_V2.xlsx">Download hear_priv_V2.xlsx</a></strong> <em>(Excel Workbook)</em>
     </div>
-    <p><strong>Data Description:</strong></p>
-    <ul>
-        <li>Details effective dates, age eligibility rules, and generosity criteria for private insurance hearing aid mandates by state over time.</li>
-        <li>Provides standardized variables for empirical policy evaluation.</li>
-    </ul>
-    <p class="citation-note">Associated Publication Citation:</p>
+    
+    <p class="citation-note">Associated Publication:</p>
     <blockquote>
-        [Insert associated publication citation]
+        Arnold, M. L., Heslin, B. J., Dowdy, M., Kershner, S. P., Phillips, S., Lipton, B., & Pesko, M. F. (2024). Longitudinal Policy Surveillance of Private Insurance Hearing Aid Mandates in the United States: 1997-2022. <i>American Journal of Public Health</i>, 114(4), 407–414. <a href="https://doi.org/10.2105/AJPH.2023.307551" target="_blank">https://doi.org/10.2105/AJPH.2023.307551</a> | <a href="https://pubmed.ncbi.nlm.nih.gov/38478867/" target="_blank">PubMed</a>
     </blockquote>
 
+    <p><strong>Data Description:</strong> The downloadable Excel file contains:</p>
+    <ul>
+        <li>“Private Insurance Hearing Aid Coverage Mandates Effective Dates and Details, as of January 1, 2023: United States”</li>
+        <li>“Status of Private Insurance Hearing Aid Coverage Mandates, by State and Month”</li>
+    </ul>
+
     <hr>
 
-    <h2>2. State Medicaid Coverage (Cross-Section)</h2>
+    <h2>2. Key Policy Features of State Medicaid Hearing Aid Coverage for Adults, 2023</h2>
     <p>This dataset tracks cross-sectional parameters of state Medicaid hearing aid coverage provisions for adults.</p>
     
     <div class="dataset-box">
-        <strong><a href="./data/hear_mcaidcross_V2.xlsx">Download State Medicaid Coverage Cross-Section Data Version 2</a></strong> <em>(Excel Workbook)</em>
+        <strong><a href="./data/hear_mcaidcross_V2.xlsx">Download hear_mcaidcross_V2.xlsx</a></strong> <em>(Excel Workbook)</em>
     </div>
-    <p><strong>Data Description:</strong></p>
-    <ul>
-        <li>Details key policy features and cross-sectional parameters of state Medicaid hearing aid coverage provisions for adults.</li>
-        <li>Captures multi-state differences in benefit caps, prior authorization rules, and device replacement frequencies.</li>
-    </ul>
-    <p class="citation-note">Associated Publication Citation:</p>
+
+    <p class="citation-note">Associated Publication:</p>
     <blockquote>
-        [Insert associated publication citation]
+        Arnold, M. L., Tonti, L., Phillips, S., Kershner, S. P., Lipton, B. J., Heslin, B., Ukert, B. D., & Pesko, M. F. (2025). Number Of States Providing Medicaid Hearing Aid Coverage For Adults Increased; Variability Was Substantive, 2017-23. <i>Health Affairs</i>, 44(12), 1522–1529. <a href="https://doi.org/10.1377/hlthaff.2025.00270" target="_blank">https://doi.org/10.1377/hlthaff.2025.00270</a> | <a href="https://pubmed.ncbi.nlm.nih.gov/41329893/" target="_blank">PubMed</a>
     </blockquote>
+
+    <p><strong>Data Description:</strong> The downloadable Excel file contains: “Key Policy Features of State Medicaid Hearing Aid Coverage for Adults, 2023”</p>
 
     <hr>
 
-    <h2>3. State Medicaid Coverage (Longitudinal)</h2>
+    <h2>3. Longitudinal Trends in Medicaid Hearing Aid Coverage for Adults in the United States: 2003-2023</h2>
     <p>This longitudinal dataset provides monthly tracking of state Medicaid hearing aid coverage determinations.</p>
     
     <div class="dataset-box">
-        <strong><a href="./data/hear_mcaidlong_V1.xlsx">Download State Medicaid Coverage Longitudinal Data Version 1</a></strong> <em>(Excel Workbook)</em>
+        <strong><a href="./data/hear_mcaidlong_V1.xlsx">Download hear_mcaidlong_V1.xlsx</a></strong> <em>(Excel Workbook)</em>
     </div>
-    <p><strong>Data Description:</strong></p>
-    <ul>
-        <li>Tracks monthly longitudinal changes in state Medicaid hearing aid coverage policies.</li>
-        <li>Spans from 2003 through recent surveillance periods to support robust quasi-experimental designs.</li>
-    </ul>
-    <p class="citation-note">Associated Publication Citation:</p>
+
+    <p class="citation-note">Associated Publication:</p>
     <blockquote>
-        [Insert associated publication citation]
+        Arnold, M., Tonti, L., Phillips, S., Kershner, S., Lipton, B., Heslin, B., Ukert, B., Hebert, R., & Pesko, M. F. (2026). Longitudinal Trends in Medicaid Hearing Aid Coverage for Adults in the United States: 2003-2023. <i>American Journal of Audiology</i>. <a href="https://doi.org/10.1044/2026_AJA-25-00204" target="_blank">https://doi.org/10.1044/2026_AJA-25-00204</a> | <a href="https://pubmed.ncbi.nlm.nih.gov/42172530/" target="_blank">PubMed</a>
     </blockquote>
+
+    <p><strong>Data Description:</strong> This Excel workbook contains the following sheets:</p>
+    <ul>
+        <li>Data View: Status of Medicaid Hearing Aid Coverage, by State and Month</li>
+        <li>State View: Coverage Determination from 01/2003 to 12/2023</li>
+    </ul>
 
     <hr>
 
-    <h2>4. Hearing Health Professional Workforce</h2>
+    <h2>4. Hearing Health Care Professional Workforce</h2>
     <p>This dataset provides state-level counts and supply-demand metrics mapping the hearing healthcare professional workforce.</p>
     
     <div class="dataset-box">
-        <strong><a href="./data/hear_prof_V1.xlsx">Download Hearing Health Professional Workforce Data Version 1</a></strong> <em>(Excel Workbook)</em>
+        <strong><a href="./data/hear_prof_V1.xlsx">Download hear_prof_V1.xlsx</a></strong> <em>(Excel Workbook)</em>
     </div>
-    <p><strong>Data Description:</strong></p>
-    <ul>
-        <li>Reports state-level counts and supply metrics for audiologists and hearing instrument specialists.</li>
-        <li>Allows researchers to evaluate provider density alongside insurance policy changes.</li>
-    </ul>
-    <p class="citation-note">Associated Publication Citation:</p>
+
+    <p class="citation-note">Associated Publication:</p>
     <blockquote>
-        [Insert associated publication citation]
+        Garuccio, J., Ukert, B., Arnold, M., Phillips, S., & Pesko, M. F. (2025). Using supply and demand to identify shortages in the hearing health care professional workforce. <i>JAMA Otolaryngology–Head & Neck Surgery</i>. Published online July 31, 2025. <a href="https://doi.org/10.1001/jamaoto.2025.2112" target="_blank">https://doi.org/10.1001/jamaoto.2025.2112</a> | <a href="https://pubmed.ncbi.nlm.nih.gov/40742737/" target="_blank">PubMed</a>
     </blockquote>
+
+    <p><strong>Data Description:</strong> This Excel workbook contains the following sheets:</p>
+    <ul>
+        <li>State-level Counts of Audiologists</li>
+        <li>State Count of Hearing Instrument Specialists</li>
+        <li>State Count of Audiologists and Hearing Instrument Specialists</li>
+    </ul>
 
     <hr>
 
