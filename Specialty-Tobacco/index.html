@@ -55,10 +55,9 @@
         blockquote {
             background-color: #f6f8fa;
             border-left: 4px solid #dfe2e5;
-            margin: 0;
+            margin: 0 0 15px 0;
             padding: 12px 16px;
             color: #586069;
-            font-style: italic;
             border-radius: 0 4px 4px 0;
         }
         ul {
@@ -73,6 +72,11 @@
             background: #e1e4e8;
             margin: 24px 0;
         }
+        .citation-note {
+            font-size: 0.95em;
+            color: #586069;
+            margin-bottom: 12px;
+        }
     </style>
 </head>
 <body>
@@ -84,13 +88,14 @@
 
     <hr>
 
-    <h2>Dataset Overview</h2>
-    <p>This directory contains data and documentation tracking specialty tobacco retail locations and visitor patterns across the United States.</p>
+    <h2>Overview</h2>
+    <p>When using any of this project's data, please reference the correct peer-reviewed publication listed below. Please see the publication for additional details on how the measures are constructed. Where multiple versions of the data exist, we recommend using the most recent version for new projects.</p>
     
     <ul>
         <li><strong>Associated Publication:</strong> Patterns of Specialty Tobacco Retail Locations and Visitor Counts in the United States (<em>Tobacco Control</em>, 2026).</li>
         <li><strong>DOI Link:</strong> <a href="https://doi.org/10.1136/tc-2026-060085" target="_blank">10.1136/tc-2026-060085</a></li>
         <li><strong>PubMed:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/42425894/" target="_blank">PMID: 42425894</a></li>
+        <li><strong>Data:</strong> Advan Research. (2022). Foot Traffic / Monthly Patterns [Dataset]. Dewey Data. https://doi.org/10.82551/BEB1-2831</li>
     </ul>
 
     <hr>
@@ -104,13 +109,30 @@
 
     <hr>
 
+    <h2>Data Description</h2>
+    <p>The downloadable file contains two data tabs (State and County level) containing Google store counts independently queried using a third-party program, match rates between Google and Advan stores, and visit counts from Advan:</p>
+    <ul>
+        <li>State-level cross section, May 2024</li>
+        <li>County-level cross section, May 2024</li>
+    </ul>
+
+    <hr>
+
     <h2>Data Citation</h2>
-    <p>If you utilize this dataset in academic work or publications, please use the following citation:</p>
+    <p class="citation-note">Article citations are provided in an example format and may be rendered in the style required by the publication or other venue. Users must also cite the versioned OpenICPSR repository record as the source of the data.</p>
     
     <blockquote>
-       <p>Landini A, Lowenstein C, Pesko MFPatterns of specialty tobacco retail locations and visitor counts in the USA. <i>Tobacco Control.</i> Published Online First: 04 August 2026. doi: 10.1136/tc-2026-060085</p> <p>[ICPSR Repository] </p> <p>[Data repository]. Social Impact Lab. https://github.com/Social-Impact-Lab-SIL/SIL-Data-Repository</p>
+        Landini, A., Lowenstein, C., &amp; Pesko, M. F. Patterns of specialty tobacco retail locations and visitor counts in the USA. <i>Tobacco Control.</i> Published Online First: 04 August 2026. doi: 10.1136/tc-2026-060085
+    </blockquote>
+
+    <blockquote>
+        [Insert Versioned OpenICPSR Repository Record Citation Here]
+    </blockquote>
+
+    <blockquote>
+	[Data Repository]: Social Impact Lab. https://github.com/Social-Impact-Lab-SIL/SIL-Data-Repository/Specialty-Tobacco
     </blockquote>
 </div>
 
 </body>
-</html> 
+</html>
