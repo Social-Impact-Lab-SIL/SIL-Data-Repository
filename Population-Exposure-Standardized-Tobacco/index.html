@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Population Exposure to Standardized Tobacco Policies - Social Impact Lab</title>
     <style>
+        :root {
+            --accent: #0366d6;
+            --accent-bg: #f1f8ff;
+            --accent-border: #c8e1ff;
+            --border: #e1e4e8;
+            --text-h: #24292e;
+            --code-bg: #f6f8fa;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.6;
-            color: #24292e;
+            color: var(--text-h);
             max-width: 800px;
             margin: 40px auto;
             padding: 0 20px;
@@ -16,11 +24,66 @@
         }
         .container {
             background-color: #ffffff;
-            border: 1px solid #e1e4e8;
+            border: 1px solid var(--border);
             border-radius: 6px;
             padding: 40px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
         }
+
+        /* Dropdown Navigation Styles */
+        #sil-nav-container {
+            margin-bottom: 24px;
+            position: relative;
+            display: inline-block;
+            text-align: left;
+        }
+        .sil-nav-btn {
+            background-color: var(--accent-bg);
+            color: var(--accent);
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            border: 1px solid var(--accent-border);
+            border-radius: 6px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .sil-dropdown-menu {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background-color: #ffffff;
+            min-width: 260px;
+            box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            z-index: 1000;
+            margin-top: 4px;
+            overflow: hidden;
+            text-align: left;
+            display: none;
+        }
+        .sil-dropdown-menu.show {
+            display: block;
+        }
+        .sil-dropdown-menu a {
+            color: var(--text-h);
+            padding: 10px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+            border-bottom: 1px solid var(--border);
+        }
+        .sil-dropdown-menu a:last-child {
+            border-bottom: none;
+        }
+        .sil-dropdown-menu a:hover {
+            background-color: var(--code-bg);
+            text-decoration: none;
+        }
+
         h1 {
             font-size: 1.8em;
             border-bottom: 1px solid #eaecef;
@@ -88,7 +151,22 @@
 <body>
 
 <div class="container">
-    <a href="../" class="back-link">← Back to Main Repository Landing Page</a>
+    <!-- Click-to-Toggle Dropdown Navigation Menu -->
+    <div id="sil-nav-container">
+        <button id="sil-nav-btn" class="sil-nav-btn" onclick="toggleSilDropdown(event)">
+            📁 SIL Navigation <span id="sil-arrow">▾</span>
+        </button>
+        <div id="sil-dropdown" class="sil-dropdown-menu">
+            <a href="https://github.com/Social-Impact-Lab-SIL" target="_blank" rel="noopener noreferrer">🌐 SIL Landing Page</a>
+            <a href="https://social-impact-lab-sil.github.io/SIL-Publications-Archive/">📚 Publications Archive</a>
+            <a href="../">🏠 Data Repository</a>
+            <a href="https://social-impact-lab-sil.github.io/SIL-Publication-Dashboard/">📊 Lab Dashboard</a>
+        </div>
+    </div>
+
+    <div>
+        <a href="../" class="back-link">← Back to Main Repository Landing Page</a>
+    </div>
 
     <h1>Population Exposure to Standardized Tobacco Policies</h1>
     <p>This repository hosts standardized datasets detailing population exposure to various tobacco control policies across the United States by state, county, and time. Please see the publications below for additional details on how the measures are constructed. Where multiple versions of the data exist, we recommend using the most recent version for new projects.</p>
@@ -164,7 +242,6 @@
     </blockquote>
 
     <hr>
-
     
     <h2>4. Vaping and Smoking Indoor Air Laws</h2>
     <p>This database reports US national- and state-level estimates of population coverage of comprehensive and partial indoor smoking restrictions from 1990 to 2021 for bars, restaurants, and workplaces, and comprehensive indoor vaping restrictions from 2006 to 2021 for the same locations. Estimates were calculated using policy data from the American Nonsmokers' Rights Foundation.</p>
@@ -204,13 +281,42 @@
 
     <hr>
 
-
     <h2>Overall Project Citation</h2>
     <p class="citation-note">When utilizing data from this repository, users must cite the overarching openICPSR project record as the data distributor:</p>
     <blockquote>
         Pesko, Michael. (2026). <i>Population Exposure to Standardized Tobacco Policies (e-cigarette taxes, indoor air laws, flavored tobacco sales restrictions, cigar taxes, specialty tobacco retail) in the USA, by state/county and time</i> [Data repository]. Inter-university Consortium for Political and Social Research [distributor]. <a href="https://doi.org/10.3886/E204041V8" target="_blank">https://doi.org/10.3886/E204041V8</a>
     </blockquote>
 </div>
+
+<!-- Dropdown Toggle Script & Outside Click Handler -->
+<script>
+    function toggleSilDropdown(event) {
+        event.stopPropagation();
+        const dropdown = document.getElementById('sil-dropdown');
+        const arrow = document.getElementById('sil-arrow');
+        const isOpen = dropdown.classList.contains('show');
+        
+        if (isOpen) {
+            dropdown.classList.remove('show');
+            arrow.textContent = '▾';
+        } else {
+            dropdown.classList.add('show');
+            arrow.textContent = '▴';
+        }
+    }
+
+    // Close dropdown when clicking outside
+    window.addEventListener('click', function(event) {
+        const container = document.getElementById('sil-nav-container');
+        const dropdown = document.getElementById('sil-dropdown');
+        const arrow = document.getElementById('sil-arrow');
+        
+        if (!container.contains(event.target)) {
+            dropdown.classList.remove('show');
+            arrow.textContent = '▾';
+        }
+    });
+</script>
 
 </body>
 </html>
